@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Сборщик контента</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Сборщик контента из Интернета</h1>
+
+        <div class="card">
+            <h2>1. Поиск по ключевому слову</h2>
+            <div id="search-form">
+                <input type="text" id="keyword-input" placeholder="Введите ключевое слово (напр. новости)">
+                <button id="search-button">Найти URL</button>
+            </div>
+        </div>
+
+        <div id="results-section" class="card hidden">
+            <h2>2. Выберите URL для загрузки</h2>
+            <ul id="url-list">
+            </ul>
+        </div>
+
+        <div id="status-section" class="card hidden">
+            <h2>Статус загрузки</h2>
+            <p id="download-status-text">Загрузка...</p>
+            <progress id="download-progress" value="0" max="100"></progress>
+        </div>
+
+        <div class="card">
+            <h2>3. Сохраненный контент (Offline)</h2>
+            <div id="saved-list-container">
+                <p id="no-saved-content">Пока ничего не сохранено.</p>
+                <ul id="saved-content-list">
+                </ul>
+            </div>
+            <div id="content-display-section" class="hidden">
+                <h3>Просмотр контента:</h3>
+                <div id="content-display"></div>
+            </div>
+        </div>
+
+        <div id="error-section" class="card error hidden">
+            <h3>Произошла ошибка:</h3>
+            <p id="error-message"></p>
+        </div>
+
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

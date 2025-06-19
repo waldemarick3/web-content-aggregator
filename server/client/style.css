@@ -1,0 +1,144 @@
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background-color: #f0f2f5;
+    color: #333;
+    line-height: 1.6;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+h1, h2, h3 {
+    margin-top: 0;
+}
+
+.card {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#search-form {
+    display: flex;
+    gap: 10px;
+}
+
+#keyword-input {
+    flex-grow: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+button {
+    padding: 10px 15px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#url-list li, #saved-content-list li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+}
+
+#url-list li:last-child, #saved-content-list li:last-child {
+    border-bottom: none;
+}
+
+#url-list button, #saved-content-list button {
+    margin-left: 15px;
+    background-color: #28a745;
+}
+#saved-content-list button.view-btn {
+    background-color: #17a2b8;
+}
+#saved-content-list button.delete-btn {
+    background-color: #dc3545;
+}
+
+
+#url-list button:hover { background-color: #218838; }
+#saved-content-list button.view-btn:hover { background-color: #138496; }
+#saved-content-list button.delete-btn:hover { background-color: #c82333; }
+
+.error {
+    background-color: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+}
+
+progress {
+    width: 100%;
+    height: 25px;
+}
+
+.hidden {
+    display: none;
+}
+
+#content-display {
+    background-color: #f8f9fa;
+    border: 1px solid #dee2e6;
+    padding: 10px 20px;
+    border-radius: 4px;
+    max-height: 500px;
+    overflow-y: auto;
+}
+
+.rss-item {
+    border-bottom: 1px solid #ddd;
+    padding: 15px 0;
+}
+
+.rss-item:last-child {
+    border-bottom: none;
+}
+
+.rss-title {
+    font-size: 1.1em;
+    font-weight: bold;
+    text-decoration: none;
+    color: #0056b3;
+}
+
+.rss-title:hover {
+    text-decoration: underline;
+}
+
+.rss-date {
+    font-size: 0.8em;
+    color: #6c757d;
+    margin: 5px 0 10px;
+}
+
+.rss-description {
+    font-size: 0.95em;
+    color: #333;
+    margin: 0;
+}

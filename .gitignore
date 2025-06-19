@@ -1,0 +1,13 @@
+# Папка с зависимостями Node.js
+server/node_modules/
+
+# Системные файлы macOS
+.DS_Store
+
+# Файлы логов
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Файлы переменных окружения
+.env
